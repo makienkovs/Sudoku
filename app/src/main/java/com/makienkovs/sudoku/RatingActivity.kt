@@ -74,6 +74,7 @@ class RatingActivity : AppCompatActivity() {
                     records.clear()
                 }
                 for (ds in snapshot.children) {
+                    println(ds)
                     val record = ds.getValue(Record::class.java)
                     if (record != null) {
                         records.add(record)
